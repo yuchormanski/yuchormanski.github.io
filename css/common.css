@@ -1,0 +1,11 @@
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+
+

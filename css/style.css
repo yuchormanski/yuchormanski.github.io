@@ -1,0 +1,64 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #222222;
+    overflow: scroll;
+}
+
+.wrapper {
+    min-height: 400px;
+    height: auto;
+    margin: 20px 0 0 20px;
+    padding: 10px;
+}
+
+input[type=text] {
+    width:130px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 15px;
+    margin: 0 -2px;
+    padding: 0 0 0 10px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.206);
+}
+
+input[type=text]:active {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.006);
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+
+
+
+
+/* -----     media queries ----*/
+
+/* Small devices (landscape phones, 576px and up) */
+
+/* @media (min-width: 576px) {} */
+
+/* Medium devices (tablets, 768px and up) */
+
+/* @media (min-width: 768px) {} */
+
+/* Large devices (desktops, 992px and up) */
+
+/* @media (min-width: 992px) {} */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+/* @media (min-width: 1200px) {} */
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        border: none;
+        margin: 0;
+    }
+
+}
