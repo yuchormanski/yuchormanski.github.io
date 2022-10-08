@@ -6,13 +6,21 @@ body {
 }
 
 .wrapper {
+    width: 960px;
     min-height: 400px;
     height: auto;
-    margin: 20px 0 0 20px;
+    margin: 20px auto 0;
     padding: 10px;
+    border: 1px solid rgb(44, 20, 20);
 }
-
-input[type=text] {
+.userForm{
+    display: block;
+    width: 139px;
+    height: 40px;
+    margin:0 auto;
+    border: 1px solid red; /* debuger*/
+} 
+input[type=tel] {
     width:130px;
     text-align: center;
     font-size: 30px;
@@ -25,11 +33,11 @@ input[type=text] {
     border: 1px solid rgba(0, 0, 0, 0.206);
 }
 
-input[type=text]:active {
+input[type=tel]:active {
     border-bottom: 1px solid rgba(0, 0, 0, 0.006);
 }
 
-input[type=text]:focus {
+input[type=tel]:focus {
     outline: none;
 }
 
