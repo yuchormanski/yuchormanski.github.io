@@ -40,8 +40,32 @@ input[type=tel]:active {
 input[type=tel]:focus {
     outline: none;
 }
+.check{
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px auto 0;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
+.userSugestions{
+    font-size: 14px;
+    font-style: italic;
+}
+.userGuessIt{
+    display: block;
+    width: 50%;
+    margin: 150px auto 0;
+text-align: center;
+    background-color: rgb(255, 0, 204);
+    color:#222222;
 
+}
 
 
 

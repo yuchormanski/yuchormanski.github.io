@@ -1,10 +1,11 @@
 function checks() {
     counterBulls = 0;
     counterCows = 0;
-    let numberToGuess = '1759'
-    let userNum = 1759;
+    let numberToGuess = '8326';     // used for debugging
+    let userNum = 1234;      //used for debugging
     let buffer = '';
-    buffer = userNum;
+    // buffer = userNum;        used for debugging  
+    //buffer += `${userNum}<br>`
     userNum = userNum.toString();
 
     for (let i = 0; i < numberToGuess.length; i++) {
@@ -20,24 +21,32 @@ function checks() {
             }
         }
     }
-
+    let animals = '';
     if (counterBulls > 0) {
         if (counterCows > 0) {
-            console.log(`${buffer} B - ${counterBulls}; C - ${counterCows}`);
-            // document.getElementById("answer").innerHTML = `${buffer} B - ${counterBulls}; C - ${counterCows}`;
+            animals = `${userNum} B - ${counterBulls}; C - ${counterCows}`;
+            buffer += `${animals}<br>`;
+            console.log(`console - ${buffer} B - ${counterBulls}; C - ${counterCows}`);
+            //document.getElementById("answer").innerHTML = `${buffer} B - ${counterBulls}; C - ${counterCows}`;
         } else {
-            console.log(`${buffer} B - ${counterBulls}`);
-            // document.getElementById("answer").innerHTML = `${buffer} B - ${counterBulls}`;
+            animals = `${userNum} B - ${counterBulls};`;
+            buffer += `${animals}<br>`;
+            console.log(`console - ${buffer} B - ${counterBulls}`);
+            //document.getElementById("answer").innerHTML = `${buffer} B - ${counterBulls}`;
         }
 
 
     } else {
         if (counterCows > 0) {
-            // document.getElementById("answer").innerHTML = `${buffer} C - ${counterCows}`;
-            console.log(`${buffer} C - ${counterCows}`);
+            animals = `${userNum} C - ${counterCows}`;
+            buffer += `${animals}<br>`;
+           // document.getElementById("answer").innerHTML = `${buffer} C - ${counterCows}`;
+            console.log(`console - ${buffer} C - ${counterCows}`);
         } else {
-            // document.getElementById("answer").innerHTML = `${buffer}`;
-            console.log(`${buffer}`);
+            animals = `${userNum}`;
+            buffer += `${animals}<br>`;
+           // document.getElementById("answer").innerHTML = `${buffer}`;
+            console.log(`console - ${buffer}`);
         }
 
     }
