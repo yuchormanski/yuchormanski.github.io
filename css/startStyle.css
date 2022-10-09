@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #222;
+    overflow: scroll;
+}
+
+.wrapper {
+    width: 560px;
+    min-height: 400px;
+    height: auto;
+    margin: 20px auto 0;
+    padding: 10px;
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 5px;
+}
+.imgDiv{
+    height: 300px;
+}
+.imgDiv img {
+    display: block;
+    height: 250px;
+    margin: 0 auto;
+}
+.playButton{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    position: inherit;
+    height: 50px;
+    font-size: 26px;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    line-height: 45px;
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 5px;
+}
+.playButton:active,
+.playButton:visited,
+.playButton:hover,
+.playButton:focus {
+    color: #222;
+}
+.myInfo{
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    font-size: 90%;
+}

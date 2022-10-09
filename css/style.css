@@ -20,7 +20,7 @@ body {
     width: 139px;
     height: 40px;
     margin: 0 auto;
-    /* border: 1px solid red; debuger */
+    /* border: 1px solid red; debugger */
 }
 
 input[type=tel] {
@@ -58,7 +58,7 @@ input[type=tel]:focus {
     border-radius: 5px;
 }
 
-.userSugestions {
+.userSuggestions {
     font-size: 13px;
     font-style: italic;
     /* border: 1px solid gray;  */
@@ -139,7 +139,7 @@ a.loadNew:focus {
         margin: 50px auto;
     }
 
-    .userSugestions {
+    .userSuggestions {
         font-size: 14px;
         /* border: 1px solid gray; */
         width: 210px;

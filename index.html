@@ -1,38 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/common.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/startStyle.css" rel="stylesheet" type="text/css">
     <title>Bulls and Cows Game</title>
-
 </head>
 
 <body>
     <div class="wrapper">
-
-        <!-- <button id="" onclick="generateNumber()">New Game</button> -->
-        <form class="userForm" action="">
-
-            <input class="classUserInput" type="tel" id="userInput" onchange="getUserInput()" name="num" value=""
-                maxlength="4">
-            <a class="check">CHECK</a>
-
-        </form>
-        <div class="userSugestions" id="answer"></div>
-        <div id="userGuess" class="userGuessIt"></div>
-        <div id="newGame"></div>
+        <div class="imgDiv">
+            <img src="img/text.png" alt="cowImage" />
+        </div>
+        <div>
+            <a href="start.html" class="playButton" alt="start">Guess It!</a>
+        </div>
     </div>
-    <!--end wrapper-->
+    <div class="myInfo">
+        <p>&copy; 2022 <a href="yuchormanski@gmail.com">yuchormanski@gmail.com</a></p>
+    </div>
 </body>
-<script type="text/javascript" src="js/scripts.js"></script>
-<script>
-    (function () {
-        generateNumber();
-    })();
-</script>
 
 </html>
