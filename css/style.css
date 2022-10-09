@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-    width: 960px;
+    width: 560px;
     min-height: 400px;
     height: auto;
     margin: 20px auto 0;
@@ -56,14 +56,20 @@ input[type=tel]:focus {
 .userSugestions{
     font-size: 14px;
     font-style: italic;
+    /* border: 1px solid gray; */
+    width: 210px;
+    max-height: 300px;
+    margin: 70px auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .userGuessIt{
     display: block;
     width: 50%;
-    margin: 150px auto 0;
-text-align: center;
+    margin: -20px auto 0;
+    text-align: center;
     background-color: rgb(255, 0, 204);
-    color:#222222;
+    color: #222222;
 
 }
 
