@@ -18,7 +18,7 @@ body {
     width: 139px;
     height: 40px;
     margin:0 auto;
-    border: 1px solid red; /* debuger*/
+    /* border: 1px solid red; debuger */
 } 
 input[type=tel] {
     width:130px;
