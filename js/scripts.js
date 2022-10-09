@@ -6,6 +6,8 @@ function generateNumber() {
     let thirdDigit = third(0, 11);
     let fourthDigit = fourth(0, 11);
     numberToGuess = `${firstDigit}${secondDigit}${thirdDigit}${fourthDigit}`;
+
+    //Hide from browser console
     console.log(numberToGuess);
 
     //generate first digit
@@ -26,7 +28,7 @@ function generateNumber() {
         if (num === 10) {
             num = 0;
         }
-        return (num === firstDigit || num === secondDigit) ? second(min, max) : num;
+        return (num === firstDigit && num === secondDigit) ? second(min, max) : num;
     }
 
     //generate fourth digit excluding first, second and third
@@ -35,7 +37,7 @@ function generateNumber() {
         if (num === 10) {
             num = 0;
         }
-        return (num === firstDigit || num === secondDigit || num === thirdDigit) ? second(min, max) : num;
+        return (num === firstDigit && num === secondDigit && num === thirdDigit) ? second(min, max) : num;
     }
 }
 
