@@ -48,7 +48,7 @@ function getUserInput() {
     // TODO: check if user add something different except numbers 
     userNum = document.getElementById("userInput").value;
     if (numberToGuess === userNum) {
-        let ok = `You guess the number!<br>${numberToGuess}<br>You guess it after ${counter} attempts`
+        let ok = `You guess the number!<br><span class="numberColor">${numberToGuess}</span><br>You did it after ${counter} attempts`
         document.getElementById("userGuess").innerHTML = ok;
         document.getElementById("newGame").innerHTML = '<a href class="loadNew" id="" type="button" onclick="document.location.reload(true)">New Game</a>';
         console.log(`OK`);
