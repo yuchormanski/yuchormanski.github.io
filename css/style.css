@@ -54,14 +54,14 @@ input[type=tel]:focus {
 }
 
 .userSugestions{
-    font-size: 14px;
+    font-size: 13px;
     font-style: italic;
-    /* border: 1px solid gray; */
-    width: 210px;
+    /* border: 1px solid gray;  */
+    width: 200px;
     max-height: 300px;
-    margin: 70px auto;
+    margin: -37px 0 0 0;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .userGuessIt{
     display: block;
@@ -72,7 +72,17 @@ input[type=tel]:focus {
     color: #222222;
 
 }
-
+a.loadNew {
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid rgb(44, 20, 20);
+    border-radius: 5px;
 
 
 /* -----     media queries ----*/
@@ -97,6 +107,19 @@ input[type=tel]:focus {
     .wrapper {
         border: none;
         margin: 0;
+    }
+    .userForm {
+        margin: 100px auto;
+    }
+    .userSugestions{
+        font-size: 14px;
+        font-style: italic;
+        border: 1px solid gray; 
+        width: 210px;
+        max-height: 300px;
+        margin: 70px auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 
 }

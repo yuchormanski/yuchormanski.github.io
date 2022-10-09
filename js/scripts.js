@@ -41,14 +41,16 @@ function generateNumber() {
     }
 }
 
+// User Input
 buffer = '';
+let counter = 0;
 function getUserInput() {
+    // TODO: check if user add something different except numbers 
     userNum = document.getElementById("userInput").value;
-    //buffer +=`${userNum}<br>`
-    //console.log(buffer);
     if (numberToGuess === userNum) {
-        let ok = `You guess the number!<br>${numberToGuess}`
+        let ok = `You guess the number!<br>${numberToGuess}<br>You guess it after ${counter} attempts`
         document.getElementById("userGuess").innerHTML = ok;
+        document.getElementById("newGame").innerHTML = '<a href class="loadNew" id="" type="button" onclick="document.location.reload(true)">New Game</a>';
         console.log(`OK`);
     } else {
         return checks()
@@ -80,6 +82,8 @@ function checks() {
         }
     }
     let animals = '';
+    counter++;
+
     if (counterBulls > 0) {
         if (counterCows > 0) {
             animals = `${userNum} - Bulls - ${counterBulls}; Cows - ${counterCows}`;
