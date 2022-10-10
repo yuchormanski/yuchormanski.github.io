@@ -91,7 +91,7 @@ function checks() {
             console.log(`console - ${buffer} - Bulls - ${counterBulls}; Cows - ${counterCows}`);
             document.getElementById("answer").innerHTML = `${buffer}`;
         } else {
-            animals = `${userNum} B - ${counterBulls};`;
+            animals = `${userNum} Bulls - ${counterBulls};`;
             buffer += `${animals}<br>`;
             console.log(`console - ${buffer} - Bulls - ${counterBulls}`);
             document.getElementById("answer").innerHTML = `${buffer}`;
