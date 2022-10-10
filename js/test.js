@@ -81,7 +81,7 @@ function generateNumber() {
         if (num === 10) {
             num = 0;
         }
-        return (num === firstDigit || num === secondDigit) ? third(min, max) : num;
+        return (num === firstDigit && num === secondDigit) ? third(min, max) : num;
     }
 
     //generate fourth digit excluding first, second and third
@@ -90,7 +90,7 @@ function generateNumber() {
         if (num === 10) {
             num = 0;
         }
-        return (num === firstDigit || num === secondDigit || num === thirdDigit) ? fourth(min, max) : num;
+        return (num === firstDigit && num === secondDigit && num === thirdDigit) ? fourth(min, max) : num;
     }
 }
 generateNumber() 
