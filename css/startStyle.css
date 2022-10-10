@@ -18,7 +18,10 @@ body {
 .imgDiv {
     height: 300px;
 }
-
+.brocken{
+    width: 580px;
+    height: 400px;
+}
 .imgDiv img {
     display: block;
     height: 250px;
@@ -106,5 +109,8 @@ a.howToPlay,
         width: 290px;
         margin: 10px auto 0;
         float: none;
+    }
+    .backToPlay{
+        margin: 0 0 0 10px;
     }
 }
