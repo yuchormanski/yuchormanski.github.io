@@ -14,15 +14,18 @@ body {
     border: 1px solid rgb(135, 135, 135);
     border-radius: 5px;
 }
-.imgDiv{
+
+.imgDiv {
     height: 300px;
 }
+
 .imgDiv img {
     display: block;
     height: 250px;
     margin: 0 auto;
 }
-.playButton{
+
+.playButton {
     display: block;
     width: 200px;
     margin: 0 auto;
@@ -36,15 +39,72 @@ body {
     border: 1px solid rgb(135, 135, 135);
     border-radius: 5px;
 }
+
 .playButton:active,
 .playButton:visited,
 .playButton:hover,
 .playButton:focus {
     color: #222;
 }
-.myInfo{
-    position: absolute;
-    right: 15px;
-    bottom: 5px;
+
+.infoBtn {
+    width: 580px;
+    height: 50px;
+    margin: 0 0px 0 -11px;
+}
+
+a.howToPlay,
+.rules,
+.backToPlay {
+    display: inline-block;
+    width: 280px;
+    height: 50px;
+    /* margin: 75px 0 0 0; */
+    font-size: 20px;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 5px;
+}
+.howToPlay {
+    margin: 75px -1px 0 0;
+}
+.rules {
+    margin: 75px 0 0 -1px;
+}
+.backToPlay{
+    margin: 0 0 0 130px;
+}
+.myInfo {
+    float: right;
+    margin: 10px 25px 0 0;
     font-size: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 280px;
+        min-height: 400px;
+        height: auto;
+        margin: 20px auto 0;
+        padding: 10px;
+        border: 1px solid rgb(44, 20, 20);
+    }
+
+    .infoBtn {
+        width: 300px;
+        height: 123px;
+        margin: 50px 0px 0 -10px;
+
+    }
+
+    a.howToPlay,
+    .rules {
+        display: block;
+        width: 290px;
+        margin: 10px auto 0;
+        float: none;
+    }
 }
