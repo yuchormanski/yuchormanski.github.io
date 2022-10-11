@@ -98,7 +98,10 @@ a.howToPlay,
         padding: 10px;
         border: 1px solid rgb(44, 20, 20);
     }
-
+    .brocken{
+        width: 280px;
+        height: 400px;
+    }
     .infoBtn {
         width: 300px;
         height: 123px;
