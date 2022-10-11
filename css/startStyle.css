@@ -19,8 +19,11 @@ body {
     height: 300px;
 }
 .brocken{
-    width: 580px;
+    width: 550px;
     height: 400px;
+}
+.indent {
+    text-indent: 20px;
 }
 .imgDiv img {
     display: block;

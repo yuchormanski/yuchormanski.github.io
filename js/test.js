@@ -40,27 +40,27 @@ function checks() {
         if (counterCows > 0) {
             animals = `${userNum} C - ${counterCows}`;
             buffer += `${animals}<br>`;
-           // document.getElementById("answer").innerHTML = `${buffer} C - ${counterCows}`;
+            // document.getElementById("answer").innerHTML = `${buffer} C - ${counterCows}`;
             console.log(`console - ${buffer} C - ${counterCows}`);
         } else {
             animals = `${userNum}`;
             buffer += `${animals}<br>`;
-           // document.getElementById("answer").innerHTML = `${buffer}`;
+            // document.getElementById("answer").innerHTML = `${buffer}`;
             console.log(`console - ${buffer}`);
         }
 
     }
 }
-checks()
+//checks()
 
 
 
-/* function generateNumber() {
+function generateNumber() {
     let firstDigit = randomNum(1, 9);
     let secondDigit = second(0, 11);
     let thirdDigit = third(0, 11);
     let fourthDigit = fourth(0, 11);
-    numberToGuess =`${firstDigit}${secondDigit}${thirdDigit}${fourthDigit}`;
+    numberToGuess = `${firstDigit}${secondDigit}${thirdDigit}${fourthDigit}`;
     console.log(numberToGuess);
 
     //generate first digit
@@ -70,7 +70,7 @@ checks()
     //generate second digit excluding first
     function second(min, max) {
         let num = Math.floor(Math.random() * (max - min) + min);
-        if(num === 10){
+        if (num === 10) {
             num = 0;
         }
         return (num === firstDigit) ? second(min, max) : num;
@@ -78,19 +78,44 @@ checks()
     //generate third digit excluding first and second
     function third(min, max) {
         let num = Math.floor(Math.random() * (max - min) + min);
-        if(num === 10){
+        if (num === 10) {
             num = 0;
         }
-        return (num === firstDigit || num === secondDigit) ? second(min, max) : num;
+        return (num === firstDigit && num === secondDigit) ? third(min, max) : num;
     }
-    
+
     //generate fourth digit excluding first, second and third
     function fourth(min, max) {
         let num = Math.floor(Math.random() * (max - min) + min);
-        if(num === 10){
+        if (num === 10) {
             num = 0;
         }
-        return (num === firstDigit || num === secondDigit || num === thirdDigit) ? second(min, max) : num;
+        return (num === firstDigit && num === secondDigit && num === thirdDigit) ? fourth(min, max) : num;
     }
 }
-generateNumber() */
+generateNumber() 
+
+function gen() {
+    let firstDigit = Math.ceil(Math.random() * (9 - 1) + 1);
+    let secondDigit = Math.floor(Math.random() * (11 - 0) + 0);
+    while(secondDigit === firstDigit){
+        secondDigit = Math.floor(Math.random() * (11 - 0) + 0);
+    }
+    let thirdDigit = Math.floor(Math.random() * (11 - 0) + 0);
+    while(thirdDigit === firstDigit && thirdDigit === secondDigit){
+        thirdDigit = Math.floor(Math.random() * (11 - 0) + 0);
+    }
+    let fourthDigit = Math.floor(Math.random() * (11 - 0) + 0);
+    while(fourthDigit === firstDigit && fourthDigit === secondDigit && fourthDigit === thirdDigit){
+        fourthDigit = Math.floor(Math.random() * (11 - 0) + 0);
+    }
+
+
+
+
+    console.log(firstDigit);
+    console.log(secondDigit);
+    console.log(thirdDigit);
+    console.log(firstDigit);
+}
+//gen()

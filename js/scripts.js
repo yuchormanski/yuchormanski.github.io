@@ -28,7 +28,7 @@ function generateNumber() {
         if (num === 10) {
             num = 0;
         }
-        return (num === firstDigit && num === secondDigit) ? second(min, max) : num;
+        return (num === firstDigit || num === secondDigit) ? third(min, max) : num;
     }
 
     //generate fourth digit excluding first, second and third
@@ -37,7 +37,7 @@ function generateNumber() {
         if (num === 10) {
             num = 0;
         }
-        return (num === firstDigit && num === secondDigit && num === thirdDigit) ? second(min, max) : num;
+        return (num === firstDigit || num === secondDigit || num === thirdDigit) ? fourth(min, max) : num;
     }
 }
 
@@ -91,7 +91,7 @@ function checks() {
             console.log(`console - ${buffer} - Bulls - ${counterBulls}; Cows - ${counterCows}`);
             document.getElementById("answer").innerHTML = `${buffer}`;
         } else {
-            animals = `${userNum} B - ${counterBulls};`;
+            animals = `${userNum} Bulls - ${counterBulls};`;
             buffer += `${animals}<br>`;
             console.log(`console - ${buffer} - Bulls - ${counterBulls}`);
             document.getElementById("answer").innerHTML = `${buffer}`;
