@@ -21,6 +21,7 @@ body {
 .brocken{
     width: 550px;
     height: 400px;
+    font-size: 18px;
 }
 .indent {
     text-indent: 20px;
@@ -100,7 +101,7 @@ a.howToPlay,
     }
     .brocken{
         width: 280px;
-        height: 400px;
+        
     }
     .infoBtn {
         width: 300px;
