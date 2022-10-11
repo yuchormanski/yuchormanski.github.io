@@ -123,14 +123,9 @@ a.loadNew:focus {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
+@media only screen and (max-width: 800px) {
     .wrapper {
-        width: 280px;
-        min-height: 400px;
-        height: auto;
-        margin: 20px auto 0;
-        padding: 10px;
-        border: 1px solid rgb(44, 20, 20);
+        width: 380px;
     }
 
     .userForm {
@@ -154,11 +149,6 @@ a.loadNew:focus {
 @media only screen and (max-width: 600px) {
     .wrapper {
         width: 280px;
-        min-height: 400px;
-        height: auto;
-        margin: 20px auto 0;
-        padding: 10px;
-        border: 1px solid rgb(44, 20, 20);
     }
 
     .userForm {
