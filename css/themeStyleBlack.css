@@ -1,0 +1,21 @@
+body {
+    background-color: #222222;
+    color: #dcdcdc;
+}
+.wrapper,
+.check {
+    border: 1px solid rgb(195, 195, 195);
+}
+.userGuessIt {
+
+    background-color: #979797;
+
+}
+
+a.loadNew:visited, a.loadNew:active, a.loadNew:focus {
+    color: #dcdcdc;
+}
+a.loadNew {
+    border: 1px solid rgb(195, 195, 195);
+
+}

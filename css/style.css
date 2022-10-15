@@ -14,7 +14,10 @@ body {
     border: 1px solid rgb(44, 20, 20);
     border-radius: 5px;
 }
-
+.theme{
+    width: 65px;
+    float: right;
+}
 .userForm {
     display: block;
     width: 139px;
@@ -29,7 +32,7 @@ input[type=tel] {
     font-size: 26px;
     line-height: 32px;
     letter-spacing: 15px;
-    margin: 0 -2px;
+    margin: 20px -2px 0;
     padding: 0 0 0 10px;
     outline: none;
     border: none;
@@ -50,7 +53,7 @@ input[type=tel]:focus {
     text-align: center;
     width: 100px;
     height: 50px;
-    margin: 10px auto 0;
+    margin: 30px auto 0;
     font-size: 14px;
     font-style: italic;
     line-height: 50px;
@@ -61,10 +64,9 @@ input[type=tel]:focus {
 .userSuggestions {
     font-size: 13px;
     font-style: italic;
-    /* border: 1px solid gray;  */
     width: 200px;
     max-height: 200px;
-    margin: 0px 0 0 0;
+    margin: 0px 0 0 20px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -72,11 +74,11 @@ input[type=tel]:focus {
 .userGuessIt {
     display: block;
     width: 50%;
-    margin: 20px auto;
+    margin: 120px auto 40px;
     text-align: center;
     font-size: 20px;
     text-shadow: 0px 3px 3px #222;
-    background-color: rgb(255, 0, 204);
+    background-color: rgb(56 56 56);
     color: #dbdbdb;
     border-radius: 5px;
 
@@ -92,20 +94,21 @@ a.loadNew {
     height: 50px;
     margin: 10px auto;
     font-size: 20px;
+    font-style: italic;
     text-decoration: none;
     text-align: center;
-    color: rgb(250 0 162);
-    text-shadow: 0px 1px 2px #555;
+    /* text-shadow: 0px 1px 2px #555; */
     line-height: 45px;
-    border: 1px solid rgb(44, 20, 20);
+    border: 1px solid rgb(56 56 56);
     border-radius: 5px;
 }
 
 a.loadNew:visited,
 a.loadNew:active,
 a.loadNew:focus {
-    color: rgb(250 0 162);
+    color: rgb(56 56 56);
 }
+
 
 /* -----     media queries ----*/
 
@@ -127,11 +130,15 @@ a.loadNew:focus {
     .wrapper {
         width: 380px;
     }
-
+    .theme{
+        width: 45px;
+    }
     .userForm {
         margin: 50px auto;
     }
-
+    .check {
+        margin: 20px auto 0;
+    }
     .userSuggestions {
         font-size: 14px;
         /* border: 1px solid gray; */
@@ -139,10 +146,15 @@ a.loadNew:focus {
         max-height: 180px;
         margin: 70px auto 20px;
     }
-
+    input[type=tel] {
+        margin: 0px -2px 0;
+    }
     .userGuessIt {
         width: 87%;
         margin: 0 auto;
+    }
+    a.loadNew {
+        margin: 20px auto;
     }
 }
 

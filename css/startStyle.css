@@ -86,7 +86,7 @@ a.howToPlay,
 }
 .myInfo {
     float: right;
-    margin: 10px 25px 0 0;
+    margin: 20px 0 0 0;
     font-size: 90%;
 }
 
@@ -101,6 +101,7 @@ a.howToPlay,
     }
     .brocken{
         width: 280px;
+        font-size: 16px;
         
     }
     .infoBtn {
@@ -113,11 +114,14 @@ a.howToPlay,
     a.howToPlay,
     .rules {
         display: block;
-        width: 290px;
+        width: 260px;
         margin: 10px auto 0;
         float: none;
     }
     .backToPlay{
         margin: 0 0 0 10px;
+    }
+    .myInfo {
+        margin: 10px 25px 0 0;
     }
 }
