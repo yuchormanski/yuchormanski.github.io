@@ -1,4 +1,6 @@
 body {
+    /* background-image: url("../img/bg.gif");
+    background-repeat: repeat; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: #222222;
@@ -6,6 +8,7 @@ body {
 }
 
 .wrapper {
+    /* background-color: #ffffff; */
     width: 560px;
     min-height: 400px;
     height: auto;
@@ -14,10 +17,12 @@ body {
     border: 1px solid rgb(44, 20, 20);
     border-radius: 5px;
 }
-.theme{
+
+.theme {
     width: 65px;
     float: right;
 }
+
 .userForm {
     display: block;
     width: 139px;
@@ -127,32 +132,42 @@ a.loadNew:focus {
 /* // Extra large devices (large desktops, 1200px and up) */
 
 @media only screen and (max-width: 800px) {
+    body {
+        background-image: none;
+    }
     .wrapper {
         width: 380px;
     }
-    .theme{
+
+    .theme {
         width: 45px;
     }
+
     .userForm {
         margin: 50px auto;
     }
+
     .check {
         margin: 20px auto 0;
     }
+
     .userSuggestions {
         font-size: 14px;
         /* border: 1px solid gray; */
         width: 210px;
         max-height: 180px;
-        margin: 70px auto 20px;
+        margin: 90px auto 20px;
     }
+
     input[type=tel] {
         margin: 0px -2px 0;
     }
+
     .userGuessIt {
         width: 87%;
         margin: 0 auto;
     }
+
     a.loadNew {
         margin: 20px auto;
     }
@@ -165,14 +180,6 @@ a.loadNew:focus {
 
     .userForm {
         margin: 50px auto;
-    }
-
-    .userSuggestions {
-        font-size: 14px;
-        /* border: 1px solid gray; */
-        width: 210px;
-        max-height: 180px;
-        margin: 70px auto 20px;
     }
 
     .userGuessIt {

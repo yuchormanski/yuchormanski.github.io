@@ -45,8 +45,40 @@ function generateNumber() {
 buffer = '';
 let counter = 0;
 function getUserInput() {
-    // TODO: check if user add something different except numbers 
     userNum = document.getElementById("userInput").value;
+    //IF user add less then four digits
+    if (userNum.length < 4) {
+        alert('You must add four digits!');
+        return;
+    }
+
+
+    //IF user add different chars than numbers
+    let isNumber = true;
+    for (let d = 0; d < userNum.length; d++) {
+        let checkForLetter = userNum[d];
+        let asciiCode = checkForLetter.charCodeAt();
+        if (asciiCode < 48 || asciiCode > 57) {
+            isNumber = false;
+            break;
+        }
+    }
+    if (!isNumber) {
+        alert('Use only numbers!');
+        return;
+    }
+
+    //IF user repeat digit
+    for (let i = 0; i < userNum.length; i++) {
+        let digit = userNum[i];
+        if (digit === userNum[i + 1]) {
+            alert("Can't repeat digits!");
+            return;
+        }
+    }
+
+
+    //IF user guess the number
     if (numberToGuess === userNum) {
         let ok = `You guess the number!<br><span class="numberColor">${numberToGuess}</span><br>You did it after ${counter} attempts`
         document.getElementById("userGuess").innerHTML = ok;
