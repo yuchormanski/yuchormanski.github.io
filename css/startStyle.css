@@ -46,6 +46,7 @@ body {
     line-height: 45px;
     border: 1px solid rgb(135, 135, 135);
     border-radius: 5px;
+    box-shadow: 2px 0px 10px rgb(138 138 138 / 60%);
 }
 
 .playButton:active,
