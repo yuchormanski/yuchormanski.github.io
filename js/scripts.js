@@ -52,7 +52,6 @@ function getUserInput() {
         return;
     }
 
-
     //IF user add different chars than numbers
     let isNumber = true;
     for (let d = 0; d < userNum.length; d++) {
@@ -76,7 +75,6 @@ function getUserInput() {
             return;
         }
     }
-
 
     //IF user guess the number
     if (numberToGuess === userNum) {
