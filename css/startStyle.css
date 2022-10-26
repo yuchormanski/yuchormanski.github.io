@@ -92,6 +92,10 @@ a.howToPlay,
     margin: 20px 0 0 0;
     font-size: 90%;
 }
+.info{
+    font-size: 16px;
+    text-indent: 20px;
+}
 
 @media only screen and (max-width: 600px) {
     .wrapper {
