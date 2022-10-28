@@ -21,6 +21,12 @@ body {
 
 .theme {
     width: 65px;
+    
+}
+.back{
+    float: left;
+}
+.bull{
     float: right;
 }
 
@@ -75,7 +81,7 @@ input[type=tel]:focus {
     font-style: italic;
     width: 200px;
     max-height: 200px;
-    margin: 0px 0 0 20px;
+    margin: 45px 0 0 20px;
     overflow-x: hidden;
     overflow-y: auto;
 }
