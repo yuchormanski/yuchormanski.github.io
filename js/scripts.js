@@ -42,7 +42,8 @@ function generateNumber() {
 }
 
 // User Input
-buffer = '';
+// buffer = '';
+buffer = [];
 let counter = 0;
 function getUserInput() {
     userNum = document.getElementById("userInput").value;
@@ -88,6 +89,7 @@ function getUserInput() {
     return userNum;
 }
 
+const answerField = document.querySelector('#answer');
 function checks() {
     counterBulls = 0;
     counterCows = 0;
@@ -97,7 +99,7 @@ function checks() {
     // buffer = userNum;        used for debugging  
     //buffer += `${userNum}<br>`
     userNum = userNum.toString();
-
+    
     for (let i = 0; i < numberToGuess.length; i++) {
         let currentDigit = numberToGuess[i];
 
@@ -117,29 +119,66 @@ function checks() {
     if (counterBulls > 0) {
         if (counterCows > 0) {
             animals = `${userNum} - Bulls - ${counterBulls}; Cows - ${counterCows}`;
-            buffer += `${animals}<br>`;
+            // buffer += `${animals}<br>`;
+            buffer.unshift(animals);
             console.log(`console - ${buffer} - Bulls - ${counterBulls}; Cows - ${counterCows}`);
-            document.getElementById("answer").innerHTML = `${buffer}`;
+            answerField.innerHTML = `${buffer.join('<br>')}`;
         } else {
             animals = `${userNum} Bulls - ${counterBulls};`;
-            buffer += `${animals}<br>`;
+            // buffer += `${animals}<br>`;
+            buffer.unshift(animals);
             console.log(`console - ${buffer} - Bulls - ${counterBulls}`);
-            document.getElementById("answer").innerHTML = `${buffer}`;
+            answerField.innerHTML = `${buffer.join('<br>')}`;
         }
 
 
     } else {
         if (counterCows > 0) {
             animals = `${userNum} - Cows - ${counterCows}`;
-            buffer += `${animals}<br>`;
-            document.getElementById("answer").innerHTML = `${buffer}`;
+            // buffer += `${animals}<br>`;
+            buffer.unshift(animals);
+            answerField.innerHTML = `${buffer.join('<br>')}`;
             console.log(`console - ${buffer} - Cows - ${counterCows}`);
         } else {
             animals = `${userNum}`;
-            buffer += `${animals}<br>`;
-            document.getElementById("answer").innerHTML = `${buffer}`;
+            // buffer += `${animals}<br>`;
+            buffer.unshift(animals);
+            answerField.innerHTML = `${buffer.join('<br>')}`;
             console.log(`console - ${buffer}`);
         }
 
     }
+}
+
+//theme change
+
+const bullHead = document.querySelector('.bullHead');
+const inputField = document.querySelector('#userInput');
+const checkBtn = document.querySelector('.check');
+let count = 0;
+bullHead.addEventListener('click', changeTheme);
+
+function changeTheme() {
+    console.log(counter);
+    if (counter % 2 === 0) {
+        document.body.style.backgroundColor = "#1C2128";
+        document.body.style.color = "#9e9e9e";
+        inputField.style.backgroundColor = "#9e9e9e";
+        inputField.style.color = "#1C2128";
+        inputField.style.textShadow = "1px 1px 1px #e5e2e2c4";
+        inputField.style.border = "1px solid rgb(195, 195, 195)";
+        answerField.style.color = "#9e9e9e";
+        checkBtn.style.color = "#9e9e9e"
+    }
+    else if (counter % 2 !== 0) {
+        document.body.style.backgroundColor = 'white';
+        inputField.style.backgroundColor = "";
+        inputField.style.color = "";
+        inputField.style.textShadow = "1px 1px 1px #8f8b8bc4";
+        inputField.style.border = "1px solid rgba(0, 0, 0, 0.395)";
+        answerField.style.color = "#222";
+        checkBtn.style.color = "#222"
+
+    }
+    counter++
 }
