@@ -69,13 +69,22 @@ function getUserInput() {
     }
 
     //IF user repeat digit
-    for (let i = 0; i < userNum.length; i++) {
-        let digit = userNum[i];
-        if (digit === userNum[i + 1]) {
-            alert("Can't repeat digits!");
-            return;
-        }
+    // for (let i = 0; i < userNum.length; i++) {
+    //     let digit = userNum[i];
+    //     if (digit === userNum[i + 1]) {
+    //         alert("Can't repeat digits!");
+    //         return;
+    //     }
+    // }
+    //----------------
+    const userSet = new Set(userNum.split(''));
+    if ([...userSet].length < 4) {
+        alert("Can't repeat digits!");
+        return;
     }
+
+
+    //------------------------
 
     //IF user guess the number
     if (numberToGuess === userNum) {
@@ -99,7 +108,7 @@ function checks() {
     // buffer = userNum;        used for debugging  
     //buffer += `${userNum}<br>`
     userNum = userNum.toString();
-    
+
     for (let i = 0; i < numberToGuess.length; i++) {
         let currentDigit = numberToGuess[i];
 
